@@ -1,0 +1,81 @@
+/* Style global pour la barre de navigation */
+nav {
+    background-color: #2c3e50; /* Fond sombre pour une apparence moderne */
+    padding: 0.8em 1.5em;
+    position: sticky; /* Reste en haut lors du défilement */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Effet d'ombre */
+  }
+  
+  /* Liste des éléments */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Liens de navigation */
+  nav ul li {
+    margin: 0 1em;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1; /* Couleur claire pour contraster avec le fond */
+    font-size: 1.3rem;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Effet au survol */
+  nav ul li a:hover {
+    background-color: #0af016; /* Couleur de fond au survol */
+    color: #ffffff; /* Couleur du texte au survol */
+  }
+  
+  /* Menu responsive */
+  nav .menu-toggle {
+    display: none; /* Caché par défaut sur grand écran */
+    font-size: 1.5rem;
+    color: #ecf0f1;
+    cursor: pointer;
+  }
+  
+  /* Responsive pour petits écrans */
+  @media (max-width: 768px) {
+    nav ul {
+        display: none; /* Caché par défaut sur mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #2c3e50;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-wrap: wrap;
+    }
+  
+    nav ul.active {
+        display: flex; /* Afficher le menu lorsque l'icône est cliquée */
+    }
+  
+    nav ul li {
+        text-align: center;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Séparateurs */
+    }
+  
+    nav ul li a {
+        padding: 1em;
+        
+
+    }
+  
+    nav .menu-toggle {
+        display: block; /* Montrer l'icône sur mobile */
+    }
+  }

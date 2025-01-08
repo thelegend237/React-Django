@@ -1,0 +1,113 @@
+/* SupplierOrders.css */
+.supplier-orders {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f7fb;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.supplier-orders h2 {
+    text-align: center;
+    color: #4bb82a;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.alert {
+    background-color: #ffcc00;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.order-form, .order-edit-form {
+    background-color: #0e0d0d;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0px 20px rgba(31, 214, 6, 0.5);
+    margin-bottom: 20px;
+}
+
+.order-form input, .order-form select, .order-edit-form input, .order-edit-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.order-form button, .order-edit-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-form button:hover, .order-edit-form button:hover {
+    background-color: #2980b9;
+}
+
+.order-edit-form h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #39ac2a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(1, 233, 59, 0.5);
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+table th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+button + button {
+    margin-left: 10px;
+}
