@@ -1,5 +1,61 @@
 React-Django Application - Guide d'Installation
 
+## Description de l'Application
+
+### Objectif
+Cette application est un système de gestion de stock et de commandes pour une entreprise. Elle permet de gérer les produits, les commandes clients et les commandes fournisseurs.
+
+### Fonctionnalités Principales
+
+#### 1. Gestion des Produits
+- Ajout, modification et suppression de produits
+- Suivi des stocks (quantité en stock)
+- Définition d'un seuil critique pour chaque produit
+- Visualisation des produits en stock faible
+
+#### 2. Gestion des Commandes Clients
+- Création de commandes clients
+- Suivi des statuts des commandes :
+  - En attente
+  - Validée
+  - Envoyée
+- Gestion des quantités commandées
+- Historique des commandes
+
+#### 3. Gestion des Commandes Fournisseurs
+- Création de commandes fournisseurs
+- Suivi des statuts des commandes :
+  - En attente
+  - Validée
+  - Envoyée
+- Gestion des approvisionnements
+- Historique des commandes fournisseurs
+
+### Interface Utilisateur
+L'application est divisée en deux parties :
+1. Frontend (React) : Interface utilisateur moderne et réactive
+2. Backend (Django) : API RESTful pour gérer les données
+
+### Utilisation de Base
+1. Connexion à l'application
+2. Consultation des produits en stock
+3. Création de nouvelles commandes
+4. Suivi des commandes en cours
+5. Gestion des approvisionnements
+
+### Points Importants
+- L'application utilise un système de seuil critique pour les stocks
+- Les commandes peuvent être suivies à travers différents statuts
+- L'interface est responsive et adaptée aux mobiles
+- Les données sont synchronisées en temps réel
+
+### Bonnes Pratiques
+1. Maintenir les stocks au-dessus du seuil critique
+2. Valider les commandes dans l'ordre
+3. Suivre régulièrement les statistiques
+4. Gérer les approvisionnements en avance
+
+
 Prérequis:
 ==========
 1. Environnement Python:
