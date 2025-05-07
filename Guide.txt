@@ -1,0 +1,134 @@
+React-Django Application - Guide d'Installation
+
+Prérequis:
+==========
+1. Environnement Python:
+   - Python 3.8 ou supérieur
+   - pip (gestionnaire de paquets Python)
+
+2. Environnement JavaScript:
+   - Node.js (version LTS recommandée)
+   - npm (gestionnaire de paquets Node.js)
+
+Installation du Backend (Django):
+================================
+1. Créer un environnement virtuel:
+   python -m venv .venv
+
+2. Activer l'environnement:
+   .venv\Scripts\activate
+
+3. Installer les dépendances Python:
+   pip install -r requirements.txt
+
+4. Appliquer les migrations:
+   python manage.py migrate
+
+Installation du Frontend (React):
+================================
+1. Aller dans le dossier frontend:
+   cd client/frontend
+
+2. Installer les dépendances React:
+   npm install
+
+Démarrage de l'Application:
+===========================
+Backend (Django):
+1. Aller dans le dossier gestion:
+   cd server/gestion
+2. Lancer le serveur:
+   python manage.py runserver
+   (Accessible sur http://localhost:8000)
+
+Frontend (React):
+1. Aller dans le dossier frontend:
+   cd client/frontend
+2. Lancer l'application:
+   npm start
+   (Accessible sur http://localhost:3000)
+
+Structure du Projet:
+===================
+React-django/
+├── client/
+│   └── frontend/
+│       └── src/
+├── server/
+│   └── gestion/
+└── requirements.txt
+
+Dépendances Python (requirements.txt):
+=====================================
+Django
+djangorestframework
+python-dotenv
+psycopg2-binary
+Pillow
+whitenoise
+django-cors-headers
+pytest-django
+django-filter
+factory-boy
+django-extensions
+django-debug-toolbar
+djangorestframework-simplejwt
+
+Dépendances JavaScript (package.json):
+=====================================
+{
+  "dependencies": {
+    "axios": "^0.27.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0"
+  }
+}
+
+Configuration:
+=============
+1. Variables d'Environnement:
+   Créer un fichier .env dans le dossier gestion:
+   DEBUG=True
+   SECRET_KEY=votre_clé_secrète
+   DATABASE_URL=sqlite:///db.sqlite3
+
+2. Base de Données:
+   - SQLite par défaut
+   - PostgreSQL possible (installer PostgreSQL et mettre à jour settings.py)
+
+Déploiement en Production:
+=========================
+1. Installer les dépendances:
+   pip install -r requirements.txt
+   npm install --production
+
+2. Construire le frontend:
+   cd client/frontend
+   npm run build
+
+3. Collecter les fichiers statiques:
+   python manage.py collectstatic
+
+Tests:
+======
+Backend:
+   python manage.py test
+
+Frontend:
+   npm test
+
+Support:
+========
+Pour toute question ou problème, contactez l'équipe de développement.
+
+Contributions:
+=============
+Les contributions sont les bienvenues. Veuillez suivre les directives de contribution.
