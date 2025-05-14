@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: server/gestion/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./server/gestion:/app
+      - /app/__pycache__
+      - /app/*/__pycache__
+    environment:
+      - DEBUG=1
+
+  frontend:
+    build:
+      context: ./client/frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

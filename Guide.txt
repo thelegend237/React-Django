@@ -3,7 +3,8 @@ React-Django Application - Guide d'Installation
 ## Description de l'Application
 
 ### Objectif
-Cette application est un système de gestion de stock et de commandes pour une entreprise. Elle permet de gérer les produits, les commandes clients et les commandes fournisseurs.
+Cette application est un système de gestion de stock et de commandes pour une entreprise.
+Elle permet de gérer les produits, les commandes clients et les commandes fournisseurs.
 
 ### Fonctionnalités Principales
 
